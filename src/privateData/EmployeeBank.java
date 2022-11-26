@@ -2,8 +2,9 @@ package privateData;
 
 public class EmployeeBank {
 
-	public String name;
-	static int amount = 0;
+	// Private키워드를 통해서 외부에서 수정할 수 없도록 만든다.
+	private String name;
+	private static int amount = 0;
 	
 	
 	public EmployeeBank ( String name) {
@@ -21,8 +22,8 @@ public class EmployeeBank {
 		
 	}
 	public void getBankInfo () {
-		System.out.println("Emploee name: " + this.name);
-		System.out.println("Emploee money amount: " + amount);
+		System.out.println("Employee name: " + this.name);
+		System.out.println("Employee money amount: " + amount);
 		
 	}
 }
