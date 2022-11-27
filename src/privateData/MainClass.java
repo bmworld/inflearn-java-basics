@@ -28,16 +28,17 @@ public class MainClass {
 		Student st1 = new Student("김만복", 90);
 		Student st2 = new Student("문익점", 80);
 		
-		st1.getiInfo();
+		st1.getInfo();
 		st1.setScore(99);
 		
-		st1.getiInfo();
+		st1.getInfo();
 		
 		st1.setScore(110); // setter에서 조건문을 걸어줬기 때문에, 수정이 발생하지 않는다.
-		st1.getiInfo();
+		st1.getInfo();
 		
 		st1.setScore(51);
-		st1.getiInfo();
+		st1.getInfo();
+		st2.getInfo();
 
 	}
 }
